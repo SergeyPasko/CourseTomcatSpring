@@ -1,12 +1,10 @@
-package lesson37.data;
+package lesson37.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 
 public class Order {
 
     private int orderNumber;
-    @JsonFormat(pattern="dd-MM-yyyy")
     private LocalDateTime orderDate;
 
     public Order(int orderNumber, LocalDateTime orderDate) {
@@ -22,7 +20,6 @@ public class Order {
         this.orderNumber = orderNumber;
     }
 
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     public LocalDateTime getOrderDate() {
         return orderDate;
     }

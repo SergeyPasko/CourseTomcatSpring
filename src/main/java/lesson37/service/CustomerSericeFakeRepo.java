@@ -5,8 +5,8 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
-import lesson37.data.Customer;
-import lesson37.data.Order;
+import lesson37.entity.Customer;
+import lesson37.entity.Order;
 import org.springframework.stereotype.Service;
 
 @Service

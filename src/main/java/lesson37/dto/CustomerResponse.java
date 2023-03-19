@@ -1,10 +1,10 @@
-package lesson37.data;
+package lesson37.dto;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Customer {
+public class CustomerResponse {
 
     private int customerNumber;
     private String customerName;
@@ -19,9 +19,9 @@ public class Customer {
     private String country;
     private BigDecimal creditLimit;
 
-    private Set<Order> orders = new HashSet<>();
+    private Set<OrderResponse> orders = new HashSet<>();
 
-    public Customer(int customerNumber, String customerName, String contactLastName, String contactFirstName,
+    public CustomerResponse(int customerNumber, String customerName, String contactLastName, String contactFirstName,
             String phone, String addressLine1, String addressLine2, String city, String state, String postalCode,
             String country, BigDecimal creditLimit) {
         this.customerNumber = customerNumber;
@@ -134,12 +134,12 @@ public class Customer {
         this.creditLimit = creditLimit;
     }
 
-    public Set<Order> getOrders() {
+    public Set<OrderResponse> getOrders() {
         return orders;
     }
 
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
+    public void setOrders(Set<OrderResponse> orderResponses) {
+        this.orders = orderResponses;
     }
 
     @Override

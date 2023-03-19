@@ -1,7 +1,7 @@
 package lesson37.service;
 
 import java.util.Set;
-import lesson37.data.Customer;
+import lesson37.entity.Customer;
 
 /**
  * @author spasko
